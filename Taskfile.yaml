@@ -16,7 +16,7 @@ tasks:
       - task: unittest
       - task: readme
       - task: changelog
-      - rm -R .cr-release-packages/
+      - rm -Rf .cr-release-packages/
       - cr package
 
   upload:
@@ -39,25 +39,10 @@ tasks:
       - task: upload
       - task: index
 
-  bumpPatchVersion:
-    desc: Increments the charts patch-version
+  unittest:
+    desc: Run all unittests
     cmds:
-      - helm local-chart-version bump -c . -s patch
-
-  bumpMinorVersion:
-    desc: Increments the charts minor-version
-    cmds:
-      - helm local-chart-version bump -c . -s minor
-
-  bumpMajorVersion:
-    desc: Increments the charts major-version
-    cmds:
-      - helm local-chart-version bump -c . -s major
-
-#  unittest:
-#    desc: Run all unittests
-#    cmds:
-#      - helm unittest .
+      - helm unittest .
 
   readme:
     desc: Build readme

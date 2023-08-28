@@ -21,3 +21,8 @@
 .idea/
 *.tmproj
 .vscode/
+renovate.json
+Taskfile.yaml
+README.md.gotmpl
+.env-template
+.env

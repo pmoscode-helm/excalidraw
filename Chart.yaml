@@ -10,7 +10,7 @@ appVersion: "v0.15.0"
 home: https://github.com/excalidraw/excalidraw
 sources:
   - https://github.com/excalidraw/excalidraw
-icon: https://github.com/excalidraw/excalidraw/blob/23c88a38d0504e333465960a928832b99b0ecb70/public/logo-180x180.png
+icon: https://github.com/excalidraw/excalidraw/blob/23c88a38d0504e333465960a928832b99b0ecb70/public/logo-180x180.png?raw=true
 
 maintainers:
   - email: info@pmoscode.de

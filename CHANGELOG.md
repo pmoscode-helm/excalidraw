@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- bump chart patch version ([7a41001](https://github.com/pmoscode-helm/excalidraw/commit/7a41001606b1c0f5a815f1e8f699d4d3df783e42) by Peter Motzko).
 - add -f when removing .cr-release-packages/ in case, it does not exist ([acc6cfb](https://github.com/pmoscode-helm/excalidraw/commit/acc6cfbd17c605b060eb59e36c2f035e624d5c58) by Peter Motzko).
 
 ### Bug Fixes

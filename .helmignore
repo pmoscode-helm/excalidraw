@@ -26,3 +26,4 @@ Taskfile.yaml
 README.md.gotmpl
 .env-template
 .env
+.helmignore

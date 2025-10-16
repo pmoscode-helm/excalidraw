@@ -4,8 +4,8 @@ description: Virtual whiteboard for sketching hand-drawn like diagrams.
 
 type: application
 
-version: 0.1.1
-appVersion: "v0.15.0"
+version: 0.18.0
+appVersion: "v0.18.0"
 
 home: https://github.com/excalidraw/excalidraw
 sources:
@@ -20,7 +20,7 @@ maintainers:
 annotations:
   artifacthub.io/images: |
     - name: excalidraw
-      image: excalidraw/excalidraw:latest
+      image: pmoscode/excalidraw:v0.18.0
       platforms:
         - linux/amd64
   artifacthub.io/license: MIT

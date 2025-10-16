@@ -12,6 +12,17 @@ From https://github.com/excalidraw/excalidraw:
 
 ## Install chart
 
+> [!CAUTION]
+>
+> !!! BREAKING CHANGE !!!
+>
+> Since version 0.18.0, I updated the excalidraw image to my own wrapper. With that you can replace the hard coded Collab server URL.
+> I also included the collab server Excalidraw is providing in their GH Repo. This collab server is rudimentary updated by me.
+> With this changes, the values.yaml has changed too.
+>The version follows the version from Excalidraw's one.
+>
+> !!!!!!!!!!!!!!!!!!!!!!!
+
     helm install [RELEASE_NAME] my-excalidraw/excalidraw
 
 The command deploys excalidraw on the Kubernetes cluster in the default configuration.

@@ -1,5 +1,5 @@
 # excalidraw Helm Chart
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square)
+![Version: 0.18.0](https://img.shields.io/badge/Version-0.18.0-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/excalidraw)](https://artifacthub.io/packages/search?repo=excalidraw)
 
 From https://github.com/excalidraw/excalidraw:
@@ -39,27 +39,38 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | affinity | object | `{}` |  |
+| collabServer.enabled | bool | `false` |  |
+| collabServer.image.pullPolicy | string | `"IfNotPresent"` |  |
+| collabServer.image.repository | string | `"pmoscode/excalidraw-collab-server"` |  |
+| collabServer.image.tag | string | `"1.0.0"` |  |
+| collabServer.podAnnotations | object | `{}` |  |
+| collabServer.podSecurityContext | object | `{}` |  |
+| collabServer.resources | object | `{}` |  |
+| collabServer.securityContext | object | `{}` |  |
+| collabServer.service.port | int | `3002` |  |
+| collabServer.service.type | string | `"ClusterIP"` |  |
+| excalidraw.customCollabServerURL | string | `"http://localhost:3002"` |  |
+| excalidraw.hardCodedCollabServerURL | string | `"https://oss-collab.excalidraw.com"` |  |
+| excalidraw.image.pullPolicy | string | `"IfNotPresent"` |  |
+| excalidraw.image.repository | string | `"pmoscode/excalidraw"` |  |
+| excalidraw.image.tag | string | `""` |  |
+| excalidraw.ingress.annotations | object | `{}` |  |
+| excalidraw.ingress.className | string | `""` |  |
+| excalidraw.ingress.enabled | bool | `false` |  |
+| excalidraw.ingress.host | string | `"chart-example.local"` |  |
+| excalidraw.ingress.path | string | `"/"` |  |
+| excalidraw.ingress.tls | object | `{}` |  |
+| excalidraw.ingress.type | string | `"ImplementationSpecific"` |  |
+| excalidraw.podAnnotations | object | `{}` |  |
+| excalidraw.podSecurityContext | object | `{}` |  |
+| excalidraw.resources | object | `{}` |  |
+| excalidraw.securityContext | object | `{}` |  |
+| excalidraw.service.port | int | `80` |  |
+| excalidraw.service.type | string | `"ClusterIP"` |  |
 | fullnameOverride | string | `""` |  |
-| image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"excalidraw/excalidraw"` |  |
-| image.tag | string | `"latest"` |  |
 | imagePullSecrets | list | `[]` |  |
-| ingress.annotations | object | `{}` |  |
-| ingress.className | string | `""` |  |
-| ingress.enabled | bool | `false` |  |
-| ingress.hosts[0].host | string | `"chart-example.local"` |  |
-| ingress.hosts[0].paths[0].path | string | `"/"` |  |
-| ingress.hosts[0].paths[0].pathType | string | `"ImplementationSpecific"` |  |
-| ingress.tls | list | `[]` |  |
 | nameOverride | string | `""` |  |
 | nodeSelector | object | `{}` |  |
-| podAnnotations | object | `{}` |  |
-| podSecurityContext | object | `{}` |  |
-| replicaCount | int | `1` |  |
-| resources | object | `{}` |  |
-| securityContext | object | `{}` |  |
-| service.port | int | `80` |  |
-| service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations | object | `{}` |  |
 | serviceAccount.create | bool | `true` |  |
 | serviceAccount.name | string | `""` |  |

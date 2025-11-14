@@ -45,7 +45,7 @@ collabServer:
   image:
     repository: pmoscode/excalidraw-collab-server
     pullPolicy: IfNotPresent
-    tag: "1.0.0"
+    tag: "1.1.0"
   podAnnotations: { }
   podSecurityContext: { }
   # fsGroup: 2000
